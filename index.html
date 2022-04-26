@@ -9,9 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
 </head>
 <body>
+
+    <main>
+        <section class="swiper-wrapper">
+            <article class="swiper-slide">1</article>
+            <article class="swiper-slide">2</article>
+            <article class="swiper-slide">3</article>
+            <article class="swiper-slide">4</article>
+            <article class="swiper-slide">5</article>
+        </section>
+    </main>
     
+    <script>
+        //기본 스와이퍼 연결법
+        const swiper = new Swiper('main', {
+           speed: 500, //스와이프시 패널이 넘어가는 속도
+           loop: true,//스와이프를 순환
+           direction: "horizontal", //스와이프 방향 horizontal가로, vertical 세로 스와이프
+           grabCursor: true,//스와이프 커서
+           slidesPerView: "auto", //해당 갯수단위로 패널 보임 "auto"지정시  100%, 특정 크기 를지정
+           spaceBetween: 30, //패널사이간격
+           centeredSlides: true, //활성화패널 가로 가운데 배치
+        });
+
+    </script>
 </body>
 </html>
