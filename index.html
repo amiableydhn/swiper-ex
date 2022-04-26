@@ -20,6 +20,12 @@
             <article class="swiper-slide">4</article>
             <article class="swiper-slide">5</article>
         </section>
+
+        <nav class="swiper-pagination"></nav>
+
+        <nav class="swiper-button-prev"></nav>
+        <nav class="swiper-button-next"></nav>
+
     </main>
     
     <script>
@@ -32,6 +38,21 @@
            slidesPerView: "auto", //해당 갯수단위로 패널 보임 "auto"지정시  100%, 특정 크기 를지정
            spaceBetween: 30, //패널사이간격
            centeredSlides: true, //활성화패널 가로 가운데 배치
+           pagination: {
+               el: ".swiper-pagination",//페이지네이션 버튼추가
+               clickable: true,//클릭가능여부설정
+           },
+           navigation: {
+               prevEl: ".swiper-button-prev",
+               nextEl: ".swiper-button-next",
+           },
+           effect: "coverflow",
+           coverflowEffect: {
+            rotate: 50,//Y축 회전각도
+            stretch: -100, //당겨짐 정도 ,사이 간격 벌어짐
+            depth: 400, // 입체적인 왜곡효과
+            slideShadows: false, // 패널의 그림자 설정
+           },
         });
 
     </script>
