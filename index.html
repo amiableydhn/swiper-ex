@@ -11,22 +11,72 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
+    
+    <h1>AMIABLESSO</h1>
 
     <main>
         <section class="swiper-wrapper">
-            <article class="swiper-slide">1</article>
-            <article class="swiper-slide">2</article>
-            <article class="swiper-slide">3</article>
-            <article class="swiper-slide">4</article>
-            <article class="swiper-slide">5</article>
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic1.png" alt="pic1">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, culpa.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic2.png" alt="pic2">
+                        <h2>Modi suscipit aut neque!</h2>
+                        <p>Maxime, molestiae? Ullam corrupti sit ex non eius. Voluptatem, doloribus.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic3.png" alt="pic3">
+                        <h2>Unde quibusdam odit eos.</h2>
+                        <p>Deserunt praesentium ratione nisi, ad delectus facere aspernatur assumenda excepturi!</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic4.png" alt="pic4">
+                        <h2>Nulla illo explicabo eligendi?</h2>
+                        <p>Fugit accusamus, optio eius adipisci exercitationem ea incidunt tempore suscipit.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <div class="inner">
+                    <div class="con">
+                        <img src="img/pic5.png" alt="pic5">
+                        <h2>Quos, autem. Dignissimos, at?</h2>
+                        <p>Dicta rem maiores id alias debitis reprehenderit consequuntur et ex.</p>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <nav class="swiper-pagination"></nav>
 
-        <nav class="swiper-button-prev"></nav>
-        <nav class="swiper-button-next"></nav>
+        <nav class="swiper-button-prev navi"></nav>
+        <nav class="swiper-button-next navi"></nav>
 
     </main>
+
+    <footer>
+        2022 AMIABLESSO &copy; ALL RIGHTS RESERVED.
+    </footer>
     
     <script>
         //기본 스와이퍼 연결법
@@ -40,7 +90,8 @@
            centeredSlides: true, //활성화패널 가로 가운데 배치
            pagination: {
                el: ".swiper-pagination",//페이지네이션 버튼추가
-               clickable: true,//클릭가능여부설정
+               //clickable: true,//클릭가능여부설정
+               type: "fraction",
            },
            navigation: {
                prevEl: ".swiper-button-prev",
